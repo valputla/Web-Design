@@ -37,8 +37,8 @@ The Waihee Station is the most active station in the dataset, temperatures visua
 Precipitation charted over a one year period from August 2016 to August 2017. August-September reveals the highest precipitation. 
  -->
 ## Setup
-<!-- Code was tested using Python 3.8.  The environment also needs pandas and matplotlib. 
-
+<!-- Code was tested using Python 3.8.  The environment also needs pandas and matplotlib. -->
+<!-- 
 The environment was setup as follows:
 
   <!-- Unordered List (bullet pointed) -->
@@ -49,7 +49,7 @@ The environment was setup as follows:
     <li>source activate envpy38</li>
     <li>jupyter notebook</li>
   <br>
-<br></br>
+<br></br> -->
 <!-- ## Data Source -->
 <!-- 
 Data found in resources/hawaii-measurements.csv and resources/hawaii-stations.csv. -->
