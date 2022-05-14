@@ -1,3 +1,5 @@
+![Web Design ReadMe image](https://user-images.githubusercontent.com/93561950/168445085-56e34951-57e4-4fb3-a4c4-5fc1fe925d57.png)
+
 # Web-Design
 Creation of a website to feature a past project to demonstrate use of HTML, CSS, and Bootstrap.
 
