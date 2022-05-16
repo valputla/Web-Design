@@ -9,6 +9,7 @@
     <title>Carousel Template · Bootstrap v5.2</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     
 <!-- CSS only -->
@@ -23,9 +24,10 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
 
 
 
-<div class="container marketing">
+
 
 <header>
+  <!-- <div class="container marketing"></div> -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Latitude</a>
@@ -75,63 +77,47 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
       <!--Left column-->
       <div class="col-lg-7">
         
+  
         <h2 class="fw-normal">Weather Overview</h2>
-        <img src="./Static/Images/MaxTemp.png">
+        <img src="./Static/Images/MaxTemp.png", class="img-fluid" alt="...">
         <p>Using the OpenWeatherMap API, ideal weather conditions pulled from randomly 
           selected cities around the world to analyze how various weather conditions impact
         location in the world related to the equator. Matplotlib was then used to compare 
-      latitude to various factors such as cloudiness, humidity, temperature, and windspeed.
-    This site serves as a collections of visualizations, analysis, and correletions uncovered 
-    during this project.</p>
+        latitude to various factors such as cloudiness, humidity, temperature, and windspeed.
+        This site serves as a collections of visualizations, analysis, and correletions uncovered 
+        during this project.</p>
  
       </div>
  
-
-
-
-<!-- 
-      <div class="clearfix">
-        <img src="./Static/Images/MaxTemp.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
-      
-        <p>
-          A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
-        </p>
-      
-        <p>
-          As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
-        </p>
-      
-        <p>
-          And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
-        </p>
-      </div> --> 
       
       <!-- /Right Column -->
       <div class="col-lg-5">
         <div class="row">
           <div class="col-lg-6">
-              <img src="https://via.placeholder.com/300">
+              <img src="./Static/Images/Cloudiness.png", class="img-fluid" alt="..."> 
           </div>
           
           <div class="col-lg-6">
-             <img src="https://via.placeholder.com/300">
+             <img src="./Static/Images/Humidity.png", class="img-fluid" alt="...">
           </div>
         </div>
         
         <div class="row">
           <div class="col-lg-6">
-              <img src="https://via.placeholder.com/300">
+              <img src="./Static/Images/MaxTemp.png", class="img-fluid" alt="...">
           </div>
           
           <div class="col-lg-6">
-             <img src="https://via.placeholder.com/300">
+             <img src="./Static/Images/WindSpeed.png", class="img-fluid" alt="...">
           </div>
         </div>
      
     </div>
 
+  </div>
 
-  <!-- </div>/  .container -->
+
+  </div>/ <!--.container--> 
 
 
   <!-- FOOTER -->
