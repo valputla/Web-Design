@@ -15,91 +15,47 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
-
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
-
     
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
-    
+
+
+
+<div class="container marketing">
+
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Carousel</a>
+      <a class="navbar-brand" href="#">Latitude</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle show" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="true">Plots</a>
+            <ul class="dropdown-menu show" aria-labelledby="dropdown06" data-bs-popper="static">
+              <li><a class="dropdown-item" href=".cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href=".humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href=".index.html">Temperature</a></li>
+              <li><a class="dropdown-item" href=".windspeed.html">Wind Speed</a></li>
+            </ul>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="./comparison.html">Comparison</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle show" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="true">Dropdown</a>
-            <ul class="dropdown-menu show" aria-labelledby="dropdown06" data-bs-popper="static">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
+
           <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link" href="./data.html">Data</a>
           </li>
+
+          
         </ul>
       </div>
     </div>
@@ -113,19 +69,44 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
 
   <div class="container marketing">
 
-    <!-- Three columns of text below the carousel -->
+    <!-- Two columns of info  -->
     <div class="row mt-5">
 
       <!--Left column-->
       <div class="col-lg-7">
         
         <h2 class="fw-normal">Weather Overview</h2>
-        <img src="https://via.placeholder.com/600">
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column. ome representative placeholder content for th ome representative placeholder content for th ome representative placeholder content for th ome representative placeholder content for th ome representative placeholder content for ome representative placeholder content for thome representative placeholder content for thth</p>
+        <img src="./Static/Images/MaxTemp.png">
+        <p>Using the OpenWeatherMap API, ideal weather conditions pulled from randomly 
+          selected cities around the world to analyze how various weather conditions impact
+        location in the world related to the equator. Matplotlib was then used to compare 
+      latitude to various factors such as cloudiness, humidity, temperature, and windspeed.
+    This site serves as a collections of visualizations, analysis, and correletions uncovered 
+    during this project.</p>
  
-      </div><!-- /Right Column -->
+      </div>
+ 
 
 
+
+<!-- 
+      <div class="clearfix">
+        <img src="./Static/Images/MaxTemp.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+      
+        <p>
+          A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+        </p>
+      
+        <p>
+          As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+        </p>
+      
+        <p>
+          And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        </p>
+      </div> --> 
+      
+      <!-- /Right Column -->
       <div class="col-lg-5">
         <div class="row">
           <div class="col-lg-6">
@@ -150,7 +131,7 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
     </div>
 
 
-  </div><!-- /.container -->
+  <!-- </div>/  .container -->
 
 
   <!-- FOOTER -->
